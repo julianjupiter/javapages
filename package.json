@@ -8,9 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "export": "next export",
-    "predeploy": "rm -rf docs/* && cp -r out/* docs && cp CNAME docs",
-    "commit": "git add docs && git commit -m \"Update site\"",
-    "deploy": "git push"
+    "deploy": "next build && next export && rm -rf docs/* && cp -r out/* docs && cp CNAME docs && git add docs && git commit -m \"Update site\" && git push"
   },
   "dependencies": {
     "next": "11.1.2",

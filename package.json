@@ -9,7 +9,7 @@
     "lint": "next lint",
     "export": "next export",
     "predeploy": "rm -rf docs/* && cp -r out/* docs",
-    "commit": "git add docs && git commit -m 'Update site'",
+    "commit": "git add docs && git commit -m \"Update site\"",
     "deploy": "git push"
   },
   "dependencies": {

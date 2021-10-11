@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "export": "next export",
-    "predeploy": "rm -rf docs/* && cp -r out/* docs",
+    "predeploy": "rm -rf docs/* && cp -r out/* docs && cp CNAME docs",
     "commit": "git add docs && git commit -m \"Update site\"",
     "deploy": "git push"
   },
